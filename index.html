@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Shop</title>
+
+    <meta name="description" content="Gaming website with featured games and latest gaming news">
+    <meta name="keywords" content="gaming, online games, gaming news, gamer">
+    <meta name="author" content="Gaming Shop">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ff4500;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url("https://via.placeholder.com/1200x400?text=Gaming+Zone") center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+        }
+        .games {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff4500;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gaming Shop</h1>
+    <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Welcome to Gaming Shop</h1>
+        <p>Best games and latest gaming news</p>
+        <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+            Explore Games
+        </button>
+    </div>
+</section>
+
+<section id="games" class="games">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Game+1">
+        <h3>Adventure Quest</h3>
+        <p>Exciting RPG adventure game</p>
+        <button>Play Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Game+2">
+        <h3>Space Shooter</h3>
+        <p>Action packed space battle</p>
+        <button>Play Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Game+3">
+        <h3>Puzzle Master</h3>
+        <p>Brain teasing puzzle game</p>
+        <button>Play Now</button>
+    </div>
+</section>
+
+<footer id="about">
+    <p>© 2026 Gaming Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
